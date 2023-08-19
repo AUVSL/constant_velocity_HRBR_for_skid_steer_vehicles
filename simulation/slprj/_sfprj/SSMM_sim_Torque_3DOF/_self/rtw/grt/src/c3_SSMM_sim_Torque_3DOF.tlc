@@ -1,0 +1,54 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   5 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "pathcount"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "SSMM_sim_Torque_3DOF:1158:42-51"\
+    }\
+    ChartData {\
+      Name         "pathcount_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "SSMM_sim_Torque_3DOF:1158:42-51"\
+    }\
+    ChartData {\
+      Name         "path"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "SSMM_sim_Torque_3DOF:1158:87-91"\
+      Dimensions   [4,2]\
+    }\
+    ChartData {\
+      Name         "init_x"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "SSMM_sim_Torque_3DOF:1158:198-204"\
+    }\
+    ChartData {\
+      Name         "init_y"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "SSMM_sim_Torque_3DOF:1158:217-223"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
