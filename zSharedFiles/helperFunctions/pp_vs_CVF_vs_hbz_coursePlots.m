@@ -17,8 +17,8 @@ function [] = coursePlots(pp, CVF, hbz, path, speed)
     CVFTime = pathTime([CVF(:,1), CVF(:,2)],speed);
     hbzTime = pathTime([hbz(:,1), hbz(:,2)], hbz(:,6));
    
-    p4 = plot(ppTime, pp(:,3)+1.7,'LineStyle', ':', 'Color', [1 0 0], 'LineWidth', 2); hold on;
-    p5 = plot(CVFTime, CVF(:,3)+1.7,'LineStyle', '-.', 'Color', [0.4 0 0.4], 'LineWidth', 2); hold on;
+    p4 = plot(ppTime, pp(:,3),'LineStyle', ':', 'Color', [1 0 0], 'LineWidth', 2); hold on;
+    p5 = plot(CVFTime, CVF(:,3),'LineStyle', '-.', 'Color', [0.4 0 0.4], 'LineWidth', 2); hold on;
     p6 = plot(hbzTime, hbz(:,3),'LineStyle', '-', 'Color', [0 .7 .7], 'LineWidth', 2); hold on;
 
     lgd = legend([p4 p5 p6],{'Pure Pursuit', 'Expert Fuzzy', 'HBZ'});
