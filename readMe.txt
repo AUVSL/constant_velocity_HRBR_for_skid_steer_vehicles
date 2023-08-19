@@ -17,4 +17,4 @@ Plot functions and course creaters are found under the helperFunctions folder
 Lastly, there is the 'Fuzzy Logic Controller' block. Unlike the other two controller this block does not have a .m script. Instead, the controller is access by going to the 'Command Window' and typing in "fuzzyLogicDesigner('fuzzyControl.fis')". From here, I recommend clicking around the 'Edit' and 'View' tabs. (Documentation if curious https://www.mathworks.com/help/fuzzy/building-systems-with-fuzzy-logic-toolbox-software.html#FP39727)
 
 known issue(s)
-1) the angular velocity setpoints for the controllers in the experimental folder will sometimes have an be saved with an offset from what it actually was in experiment/ what the vehicles send out with ros
+1) the angular velocity setpoints for the controllers in the experimental folder will sometimes have be saved with an offset from what it actually was in experiment/ what the vehicles send out with ros
