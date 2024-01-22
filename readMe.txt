@@ -18,3 +18,6 @@ Lastly, there is the 'Fuzzy Logic Controller' block. Unlike the other two contro
 
 known issue(s)
 1) the angular velocity setpoints data for the controllers in the experimental folder will sometimes be saved with an offset from what actually was seen in experiment/ what the vehicles send out with ros
+
+This code is associated with the paper:
+Dekhterman, S.R., Cichon, M.T., Norris, W.R., Nottage, D. & Soylemezoglu, A. (2024) Hierarchical rule-base reduction fuzzy control for constant velocity path tracking of a differential steer vehicle. Journal of Field Robotics, 1–17. https://doi.org/10.1002/rob.22287
