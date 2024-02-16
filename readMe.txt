@@ -10,7 +10,7 @@ If you want to run the code on an external ROS platform open the experiment fold
 1) open and run prerun.m to load in paths and dependencies
 2) open the simulink block diagram for the controller of interest
 3) make sure the platform and computer with matlab are on the same network
-4) add the ip address of the robot you are trying to connect
+4) add the ip address of the robot you are trying to connect in simulink and locally in the network config file
 
 Plot functions and course creaters are found under the helperFunctions folder
 
