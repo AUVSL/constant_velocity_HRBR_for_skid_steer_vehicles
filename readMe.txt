@@ -2,7 +2,7 @@ Clone the files on the  AUVSL/ConstantVelHRBRforDifferentialSteerVehicles GitHub
 
 If you want to run the simulation open the simulation folder and
 1) open and run prerun.m to load in paths and dependencies
-2) run JACKAL_dynamic_model.m to load iin values needed for the dynamic model (the functions of which are in the spatia_v2 folder)
+2) run JACKAL_dynamic_model.m to load in values needed for the dynamic model (the functions of which are in the spatia_v2 folder)
 3) Uncomment the paths you want to run in AutoRun.m and press the run button (Note this will only run one simulink file/ controller at a time. Since the runSim function is tied to SSMM_sim_...)
 4) To connect other controllers such as the pure pursuit controller, open SSMM_sim_Torque_3DOF.slx, uncomment the controller of interest, comment out the existing controller, and swap the connects
 
